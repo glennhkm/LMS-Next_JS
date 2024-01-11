@@ -35,7 +35,7 @@ module.exports = {
         lato: ["Lato", "sans-serif"],
       },
       colors: {
-        gold: ['#D39F36'],
+        primary: '#D39F36',
       },
     },
   },

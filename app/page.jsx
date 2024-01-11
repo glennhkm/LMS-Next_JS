@@ -1,27 +1,13 @@
-import React from 'react'
-import { SignInButton } from "@clerk/nextjs"
-import { Header } from '../components/header'
-import { ButtonPrimary } from '../components/button'
+import { useSignIn } from "@clerk/nextjs";
+import React from "react";
 
 const Home = () => {
+  useSignIn;
   return (
-    <main className='w-full'>
-      <div className='sticky top-0'>
-        <Header 
-          right = {
-            <ButtonPrimary href="">
-              <SignInButton>
-                SIGN IN
-              </SignInButton>
-            </ButtonPrimary>
-          }  
-        />
-      </div>
-      <div className=' font-normal text-xl text-center px-12'>
-        Ini Halaman Home
-      </div>
+    <main>
+      <div className=" font-normal text-xl text-center px-5 md:px-12">Home</div>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
